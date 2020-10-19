@@ -15,17 +15,17 @@ client.on("guildCreate", guild => {
 });
 client.on("message", message => {
   if (message.channel.type !== "text") return;
-  if (message.content === "!off") {
+  if (message.content === "-off") {
     stop.push(message.guild.id);
     return message.channel.send({
       embed: {
         title:
-          "Alright rainbow role stop",
+          "Alright rainbow role stop || By hypen",
         color: 0xff2222
       }
     });
   }
-  if (message.content === "!on") {
+  if (message.content === "-on") {
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const stop = [];
